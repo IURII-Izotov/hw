@@ -8,7 +8,6 @@ const MessageSender = (props: any) => {
     const textareaRef = useRef<HTMLTextAreaElement | null>(null);
     const [messages, setMessages] = useState<any[]>([])
     const [text, setText] = useState<any>('')
-
     const onChange = (e: any) => {
         setText(e.currentTarget.value)
     }

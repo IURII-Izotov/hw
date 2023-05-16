@@ -1,31 +1,83 @@
 .message {
-
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
 }
 
 .imageAndText {
-
+    display: flex;
+    flex-direction: row-reverse;
+    height: min-content;
 }
 
 .imageAndText img {
-
+    max-height: 48px;
+    width: 100%;
+    max-width: 48px;
+    align-self: flex-end;
 }
 
 .text {
-
+    position: relative;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    background: #0066CC;
+    border-radius: 10px;
+    text-wrap: normal;
+    max-width: 527px;
+    padding-top: 7px;
+    padding-bottom: 8px;
+    padding-left: 13px;
+    padding-right: 25px;
+    color: #FFFFFF;
+    margin-right: 15px;
 }
 
 .text:after {
-
+    content: '';
+    position: absolute;
+    border-right: 20px solid transparent;
+    border-left: 10px solid transparent;
+    border-bottom: 15px solid #0066CC;
+    right: -12px;
+    bottom: 0px;
 }
 
 .name {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+}
 
+pre {
+    white-space: pre-wrap; /* css-3 */
+    white-space: -moz-pre-wrap; /* Mozilla, с 1999 года*/
+    white-space: -pre-wrap; /* Opera 4-6 */
+    white-space: -o-pre-wrap; /* Opera 7 */
+    word-wrap: break-word; /* Internet Explorer 5.5+ */
 }
 
 .messageText {
-
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .time {
-
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: right;
+    margin-right: 11px;
 }
