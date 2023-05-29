@@ -41,7 +41,9 @@ const Greeting: React.FC<GreetingPropsType> = (
                     <input
                         id={'hw3-input'}
                         value={name}
-                        onChange={(e)=>setNameCallback(e.target)}
+                        onChange={(e)=>{
+                            setNameCallback(e.target)
+                        }}
                         className={inputClass}
                         onKeyDown={onEnter}
                         onBlur={onBlur}

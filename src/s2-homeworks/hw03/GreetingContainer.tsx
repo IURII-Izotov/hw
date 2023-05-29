@@ -44,11 +44,11 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
 
     const setNameCallback = (e: HTMLInputElement) => { // need to fix any
         setName(e.value); // need to fix
-
         error && setError('')
     }
     const addUser = () => {
-        pureAddUser(name, setError, setName, addUserCallback)
+        pureAddUser(name, setError, setName, addUserCallback);
+        setName('');
     }
 
     const onBlur = () => {
@@ -60,8 +60,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
     }
 
     const totalUsers = users.length; // need to fix
-    const lastUserName = name.trim(); // need to fix
-
+    const lastUserName = users[users.length-1]?.name.trim(); // need to fix
     return (
         <Greeting
             name={name}
